@@ -1,0 +1,43 @@
+﻿Exercise 1
+
+a) Its cursor lies between elements that can be accessed by calling remove() and/or next()
+
+b) It removes the latest element returned by next() or remove()
+
+c) x, and then y.
+
+d) It would throw an IllegalStateException, since it can only be called once per call to next or previous
+
+e) It would change “b” to “x”, and then to “y”
+
+f) It would change “b” to “x” and then remove “x”
+
+g) It would throw an IllegalStateException
+
+h) Yes. It would be inserted at the beginning of the list
+
+j) No. since there has been no calls to next or previous
+
+k) Yes, it would be added at the end of the list.
+
+l) There are three cases: 
+1. We called next until we reached the last element of the list. In this cases, the last element of the list will be changed.
+2. We add an element to the list. In this case, the call would be invalid, since we can’t call set() adding an element
+3. Similarly, if we remove the last element of a list, hasNext() would be false, and we also can’t call set() after remove. 
+
+m) Again, we have to look at multiple cases
+1. If we had just called next() or previous(), then we would be able to call remove(), and the element returned by either of the two functions would be removed.
+2. In the case after we had just called add(), we would not be able to remove the element.
+
+n) The second iterator would return b, since the cursor is between a and b.
+
+o) It’s ambiguous. Preferably, it would throw an exception.
+
+
+
+
+
+
+
+
+
